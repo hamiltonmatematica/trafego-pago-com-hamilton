@@ -1,15 +1,15 @@
-import { 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  Users, 
-  CheckCircle, 
-  Target, 
-  TrendingUp, 
-  Brain, 
-  Layout, 
-  Image as ImageIcon, 
-  Video, 
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Users,
+  CheckCircle,
+  Target,
+  TrendingUp,
+  Brain,
+  Layout,
+  Image as ImageIcon,
+  Video,
   MessageCircle,
   Award,
   BarChart,
@@ -26,7 +26,7 @@ export const HERO_DATA = {
   headline: "Curso Presencial de Tráfego Pago + Inteligência Artificial",
   subheadline: "Aprenda a criar campanhas no Facebook e Instagram e produzir conteúdos com IA para vender mais em apenas 2 dias, de forma 100% prática.",
   details: [
-    { icon: Calendar, text: "17 e 18 de janeiro" },
+    { icon: Calendar, text: "28/02 e 01/03" },
     { icon: Clock, text: "8h às 18h (almoço 12h às 14h)" },
     { icon: MapPin, text: "Av. Afonso Pena, 197 – Centro – Montes Claros" },
     { icon: Users, text: "Apenas 8 vagas" },
@@ -84,7 +84,7 @@ export const INCLUSIONS = [
 export const PRICING = {
   original: "R$ 497",
   promo: "R$ 397",
-  deadline: "até 31 de Dezembro",
+  deadline: "até 10 de fevereiro",
   installments: "até 6x"
 };
 
