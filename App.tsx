@@ -6,7 +6,6 @@ import {
   HERO_DATA,
   INSTRUCTOR_DATA,
   COURSE_MODULES,
-  AI_DIFFERENTIALS,
   TARGET_AUDIENCE,
   INCLUSIONS,
   PRICING,
@@ -77,8 +76,8 @@ export default function App() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6">
-            Curso Presencial de <span className="text-brand-orange">Tráfego Pago</span> <br className="hidden md:block" />
-            + <span className="text-brand-orange">Inteligência Artificial</span> <span className="text-white">(Montes Claros)</span>
+            Curso Presencial de <br className="hidden md:block" />
+            <span className="text-brand-orange">Tráfego Pago</span> <span className="text-white">(Meta Ads)</span>
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -117,7 +116,6 @@ export default function App() {
       <Section className="" dark={false}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            {/* Placeholder for Instructor Image */}
             <div className="aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl relative">
               <img
                 src="/hamilton.JPG"
@@ -131,7 +129,6 @@ export default function App() {
                 </div>
               </div>
             </div>
-            {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-orange z-[-1] rounded-full opacity-20"></div>
           </div>
 
@@ -161,7 +158,7 @@ export default function App() {
       <Section dark={true} className="bg-brand-gray">
         <div className="text-center mb-12">
           <Title center dark>Turmas Presenciais Anteriores</Title>
-          <p className="text-gray-400">Um ambiente focado em aprendizado prático e networking.</p>
+          <p className="text-gray-400">Ambiente focado em prática, aprendizado e aplicação real.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {[1, 2, 3, 4, 5].map((i) => (
@@ -176,13 +173,17 @@ export default function App() {
         </div>
       </Section>
 
-      {/* 5, 6 & 7. ABOUT COURSE, CONTENT & AI */}
+      {/* 5, 6 & 7. ABOUT COURSE & CONTENT */}
       <Section dark={false} className="bg-gray-50">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <Title>O Essencial para Vender Online</Title>
+          <Title>Um dia para aprender tráfego pago na prática</Title>
           <p className="text-xl text-gray-600 mb-8">
-            Um curso presencial, intensivo e <span className="font-bold text-brand-orange">100% prático</span>,
-            focado em tráfego pago no Facebook e Instagram e uso de Inteligência Artificial para criação de conteúdos que convertem.
+            Um treinamento presencial, intensivo e <span className="font-bold text-brand-orange">100% prático</span>,
+            focado em ensinar você a criar, configurar e otimizar campanhas no Facebook e Instagram.
+          </p>
+
+          <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+            Você não vai apenas assistir. Vai aplicar tudo na prática e sair sabendo como rodar seus próprios anúncios.
           </p>
 
           <div className="bg-white p-6 rounded-xl border border-gray-200 flex flex-col md:flex-row items-center gap-5 max-w-3xl mx-auto shadow-md">
@@ -195,58 +196,32 @@ export default function App() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-          {/* Main Content */}
+        <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold mb-8 flex items-center justify-center gap-3">
               <span className="bg-black text-white p-2 rounded-lg"><ArrowRight size={24} /></span>
               Conteúdo do Curso
             </h3>
-            <div className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-8">
               {COURSE_MODULES.map((module, idx) => (
-                <div key={idx} className="border-b border-gray-100 last:border-0 pb-4 last:pb-0">
-                  <div className="flex items-start gap-4">
-                    <module.icon className="text-brand-orange shrink-0 mt-1" size={24} />
-                    <div>
-                      <h4 className="font-bold text-lg text-gray-900">{module.title}</h4>
-                      {module.details && (
-                        <div className="flex flex-wrap gap-2 mt-2">
-                          {module.details.map((d, i) => (
-                            <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-md">
-                              {d}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                <div key={idx} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                  <div className="flex items-start gap-4 mb-4">
+                    <module.icon className="text-brand-orange shrink-0" size={28} />
+                    <h4 className="font-bold text-xl text-gray-900">{module.title}</h4>
                   </div>
+                  {module.details && (
+                    <ul className="space-y-2">
+                      {module.details.map((d, i) => (
+                        <li key={i} className="flex items-center gap-2 text-gray-600 text-sm">
+                          <Check size={14} className="text-brand-orange" />
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* AI Differentiator */}
-          <div className="bg-black text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
-            {/* Abstract Orange Circle */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange rounded-full blur-[80px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
-
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 relative z-10">
-              <span className="bg-brand-orange text-white p-2 rounded-lg"><Check size={24} /></span>
-              Diferencial: Inteligência Artificial
-            </h3>
-            <p className="text-gray-400 mb-8 relative z-10">
-              Não basta saber apertar botões. Você vai aprender a usar a IA para acelerar sua produção e criatividade.
-            </p>
-            <ul className="space-y-5 relative z-10">
-              {AI_DIFFERENTIALS.map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <div className="bg-white/10 p-2 rounded-full text-brand-orange">
-                    <item.icon size={20} />
-                  </div>
-                  <span className="font-medium">{item.text}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </Section>
@@ -254,7 +229,7 @@ export default function App() {
       {/* 8. TARGET AUDIENCE */}
       <Section dark={true}>
         <div className="text-center mb-12">
-          <Title dark center>Para quem é este curso?</Title>
+          <Title dark center>Para quem é o curso</Title>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {TARGET_AUDIENCE.map((audience, idx) => (
@@ -270,7 +245,6 @@ export default function App() {
       <Section className="bg-brand-orange">
         <div className="max-w-4xl mx-auto text-center mb-10 text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">O que está incluso</h2>
-          <p className="opacity-90 text-lg">Tudo que você precisa para sair do zero e ter resultados.</p>
         </div>
 
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-4">
@@ -288,15 +262,14 @@ export default function App() {
         <div className="max-w-4xl mx-auto bg-white text-black rounded-3xl overflow-hidden shadow-2xl">
           <div className="p-8 md:p-12 text-center">
             <h2 className="text-sm font-bold tracking-widest text-brand-orange uppercase mb-2">Investimento</h2>
-            <h3 className="text-3xl md:text-5xl font-extrabold mb-6">Garanta sua vaga agora</h3>
+            <h3 className="text-3xl md:text-5xl font-extrabold mb-6">Garanta sua vaga</h3>
 
             <div className="flex flex-col items-center justify-center mb-8">
-              <span className="text-gray-400 line-through text-xl">Valor normal: {PRICING.original}</span>
-              <div className="flex items-baseline gap-2 mt-2">
-                <span className="text-6xl font-black text-black">{PRICING.promo}</span>
+              <div className="flex items-baseline gap-2">
+                <span className="text-7xl font-black text-black">{PRICING.value}</span>
               </div>
-              <p className="text-red-600 font-bold mt-2 bg-red-100 px-4 py-1 rounded-full">
-                Promoção válida {PRICING.deadline}
+              <p className="text-gray-600 font-bold mt-2">
+                Em até 6x no cartão
               </p>
             </div>
 
@@ -306,8 +279,8 @@ export default function App() {
             </div>
 
             <div className="text-gray-500 text-sm">
-              <p className="flex items-center justify-center gap-1">
-                <Users size={16} /> Apenas 8 vagas disponíveis para esta turma.
+              <p className="flex items-center justify-center gap-1 font-bold text-red-600">
+                <Users size={16} /> Apenas 8 vagas disponíveis
               </p>
             </div>
           </div>
@@ -319,7 +292,7 @@ export default function App() {
               className="inline-flex items-center gap-2 text-gray-700 hover:text-brand-orange font-medium"
             >
               <MessageCircle size={20} />
-              Precisa de ajuda? Fale conosco no WhatsApp
+              Dúvidas: +55 38 8403-0420
             </a>
           </div>
         </div>
@@ -328,8 +301,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="bg-black py-8 border-t border-white/10 text-center text-gray-500 text-sm">
         <div className="max-w-6xl mx-auto px-4">
-          <p>© {new Date().getFullYear()} Hamilton Vinícius. Todos os direitos reservados.</p>
-          <p className="mt-2">Montes Claros - MG</p>
+          <p>© 2026 Hamilton Vinícius. Montes Claros - MG</p>
         </div>
       </footer>
     </div>

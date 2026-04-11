@@ -3,31 +3,26 @@ import {
   Clock,
   MapPin,
   Users,
-  CheckCircle,
   Target,
   TrendingUp,
-  Brain,
   Layout,
-  Image as ImageIcon,
-  Video,
-  MessageCircle,
-  Award,
   BarChart,
+  MessageCircle,
   Zap
 } from 'lucide-react';
 
 export const WHATSAPP_NUMBER = "553884030420";
-export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Curso%20de%20Tr%C3%A1fego%20e%20IA.`;
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Curso%20Presencial%20de%20Tr%C3%A1fego%20Pago.`;
 
-export const PAYMENT_LINK_CASH = "https://www.asaas.com/c/f2dxxlh0bs0vqown";
-export const PAYMENT_LINK_INSTALLMENT = "https://www.asaas.com/c/q426y08qnvsgnrdb";
+export const PAYMENT_LINK_CASH = "https://www.asaas.com/c/crjqjh6v1ufc6llm";
+export const PAYMENT_LINK_INSTALLMENT = "https://www.asaas.com/c/pfriytvj5mb24523";
 
 export const HERO_DATA = {
-  headline: "Curso Presencial de Tráfego Pago + Inteligência Artificial",
-  subheadline: "Aprenda a criar campanhas no Facebook e Instagram e produzir conteúdos com IA para vender mais em apenas 2 dias, de forma 100% prática.",
+  headline: "Curso Presencial de Tráfego Pago (Meta Ads)",
+  subheadline: "Aprenda a criar campanhas no Facebook e Instagram e sair do zero para a prática em apenas 1 dia.",
   details: [
-    { icon: Calendar, text: "28/02 e 01/03" },
-    { icon: Clock, text: "8h às 18h (almoço 12h às 14h)" },
+    { icon: Calendar, text: "21 de abril" },
+    { icon: Clock, text: "8h às 12h e 14h às 19h" },
     { icon: MapPin, text: "Av. Afonso Pena, 197 – Centro – Montes Claros" },
     { icon: Users, text: "Apenas 8 vagas" },
   ]
@@ -37,55 +32,61 @@ export const INSTRUCTOR_DATA = {
   name: "Hamilton Vinícius",
   role: "Mestre em Modelagem Computacional e Gestor de Tráfego",
   bio: [
-    "Professor há mais de 20 anos, mestre em Modelagem Computacional e Sistemas e gestor de tráfego pago e inteligência artificial há mais de 6 anos.",
-    "Atua na interseção entre educação, dados, marketing digital e IA, ajudando empresas a crescerem por meio de estratégias de tráfego pago no Facebook, Instagram e Google.",
-    "É membro das duas maiores comunidades de tráfego do Brasil e possui experiência prática na gestão de campanhas próprias e de empresas da região, sempre com foco em resultado real, previsibilidade e escala."
+    "Hamilton Vinícius é professor há mais de 20 anos, mestre em Modelagem Computacional e Sistemas e gestor de tráfego pago há mais de 6 anos.",
+    "Atua ajudando empresas a crescerem por meio de estratégias de anúncios no Facebook e Instagram, com foco em resultado real, previsibilidade e escala.",
+    "É membro das duas maiores comunidades de tráfego do Brasil e possui experiência prática na gestão de campanhas próprias e de empresas da região."
   ],
   highlights: [
     "Professor há 20+ anos",
     "Mestre em Modelagem Computacional",
-    "Gestor de Tráfego Pago e IA",
+    "Gestor de Tráfego Pago",
     "Especialista em Meta Ads",
     "Experiência prática com negócios locais",
-    "Foco em dados, conversão e crescimento"
+    "Foco em resultado e conversão"
   ]
 };
 
 export const COURSE_MODULES = [
-  { icon: Target, title: "Fundamentos do Tráfego Pago" },
-  { icon: Layout, title: "Configurações Iniciais (Meta Ads)" },
-  { icon: TrendingUp, title: "Criação de Campanhas na Prática", details: ["Reconhecimento", "Tráfego", "Leads", "Engajamento", "Mensagens (WhatsApp)", "Conversão", "Remarketing"] },
-  { icon: BarChart, title: "Leitura e Otimização de Resultados" }
-];
-
-export const AI_DIFFERENTIALS = [
-  { icon: MessageCircle, text: "Geração de copys persuasivas" },
-  { icon: ImageIcon, text: "Criação de imagens com IA" },
-  { icon: Video, text: "Criação e edição de vídeos com IA" },
-  { icon: Zap, text: "Roteiros rápidos para anúncios" },
-  { icon: Brain, text: "IA aplicada ao dia a dia do gestor" }
+  { 
+    icon: Target, 
+    title: "Fundamentos do Tráfego Pago",
+    details: ["O que é tráfego pago", "Estrutura de campanhas", "Como definir objetivos"]
+  },
+  { 
+    icon: Layout, 
+    title: "Configuração no Meta Ads",
+    details: ["Conta de anúncios", "Página no Facebook", "Instagram profissional", "Pixel básico"]
+  },
+  { 
+    icon: TrendingUp, 
+    title: "Criação de Campanhas", 
+    details: ["Reconhecimento", "Tráfego", "Engajamento", "Mensagens (WhatsApp)", "Conversão", "Remarketing"] 
+  },
+  { 
+    icon: BarChart, 
+    title: "Otimização",
+    details: ["Leitura de métricas", "Ajustes práticos", "Como melhorar campanhas"]
+  }
 ];
 
 export const TARGET_AUDIENCE = [
-  "Iniciantes do zero",
-  "Quem já anuncia sem resultado",
-  "Quem quer vender mais no Instagram",
-  "Quem quer independência para rodar anúncios"
+  "Iniciantes que querem começar do zero",
+  "Quem já tentou anunciar e não teve resultado",
+  "Quem quer vender mais pelo Instagram",
+  "Quem quer aprender de forma prática"
 ];
 
 export const INCLUSIONS = [
-  "2 dias de curso presencial",
+  "1 dia de curso presencial",
   "Conteúdo 100% prático",
-  "Turma com 8 alunos",
+  "Turma com apenas 8 alunos",
   "Checklists e modelos prontos",
-  "Grupo de suporte por 30 dias"
+  "Suporte para dúvidas"
 ];
 
 export const PRICING = {
-  original: "R$ 497",
-  promo: "R$ 397",
-  deadline: "até 10 de fevereiro",
+  value: "R$ 197,00",
   installments: "até 6x"
 };
 
-export const NOTEBOOK_INFO = "Curso 100% prático: todas as atividades serão realizadas no computador. O aluno utilizará seu próprio notebook e, caso não possua, a organização disponibilizará um equipamento para uso durante o curso.";
+export const NOTEBOOK_INFO = "Curso 100% prático: Todas as atividades serão realizadas no computador. O aluno utilizará seu próprio notebook e, caso não possua, a organização disponibilizará um equipamento para uso durante o curso.";
