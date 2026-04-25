@@ -21,7 +21,7 @@ export const HERO_DATA = {
   headline: "Curso Presencial de Tráfego Pago (Meta Ads)",
   subheadline: "Aprenda a criar campanhas no Facebook e Instagram e sair do zero para a prática em apenas 1 dia.",
   details: [
-    { icon: Calendar, text: "21 de abril" },
+    { icon: Calendar, text: "23 de maio" },
     { icon: Clock, text: "8h às 12h e 14h às 19h" },
     { icon: MapPin, text: "Av. Afonso Pena, 197 – Centro – Montes Claros" },
     { icon: Users, text: "Apenas 8 vagas" },
